@@ -1,5 +1,11 @@
 -- Active: 1662231991925@@127.0.0.1@3306@cinema
 
+/************************
+*************************
+************** Erwan SOULAS project for database creation and administration.
+*************************
+*************************/
+
 -- Creation of database's admin.
 CREATE USER 'cinema_admin'@'localhost' IDENTIFIED BY 'StudirockS';
 
