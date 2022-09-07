@@ -8,6 +8,7 @@ CREATE DATABASE IF NOT EXISTS cinema;
 
 -- Creation of privileges for admin.
 GRANT ALL PRIVILEGES ON cinema.* TO 'cinema_admin'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 
 -- Creation of all tables.
 DROP TABLE IF EXISTS user;
