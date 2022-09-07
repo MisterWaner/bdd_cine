@@ -1,7 +1,13 @@
 -- Active: 1662231991925@@127.0.0.1@3306@cinema
 
+-- Creation of database's admin.
+CREATE USER 'cinema_admin'@'localhost' IDENTIFIED BY 'StudirockS';
+
 -- Creation of database. 
 CREATE DATABASE IF NOT EXISTS cinema;
+
+-- Creation of privileges for admin.
+GRANT ALL PRIVILEGES ON cinema.* TO 'cinema_admin'@'localhost' WITH GRANT OPTION;
 
 -- Creation of all tables.
 DROP TABLE IF EXISTS user;
@@ -252,4 +258,3 @@ insert into resa (resa_id, resa_total_price, full_price_place, student_price_pla
 insert into resa (resa_id, resa_total_price, full_price_place, student_price_place, children_price_place, customer_id, movie_id, slot_id) values (8, 44.0, 8, 4, 10, 1, 7, 10);
 insert into resa (resa_id, resa_total_price, full_price_place, student_price_place, children_price_place, customer_id, movie_id, slot_id) values (9, 35.35, 6, 7, 5, 3, 2, 10);
 insert into resa (resa_id, resa_total_price, full_price_place, student_price_place, children_price_place, customer_id, movie_id, slot_id) values (10, 47.71, 4, 3, 1, 1, 2, 8);
-
